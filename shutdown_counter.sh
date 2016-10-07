@@ -3,7 +3,7 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 count=$(cat /tmp/counter.txt | grep -c ^)
 form=/tmp/ssmtp_mailTEMP.txt
-myemail=adrianbuford@gmail.com
+myemail=YOUREMAILADDRESS
 
 ###################Email and shutdown###############################
 if [ $count -gt 10 ]; then
@@ -18,7 +18,10 @@ cat $form | ssmtp $myemail
 
 rm $form
 
+rm /tmp/counter.txt
+
 shutdown
+#####################################################################
 
 exit 0
 
