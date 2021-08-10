@@ -2,7 +2,7 @@
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 mailformADMIN=/tmp/1form.txt
-myemail=adrianbuford@gmail.com
+myemail=[insert-email-address-here-without-bracketry]
 count=$(cat /tmp/counter.txt | grep -c ^)
 adminmac=cc:79:4a:41:6d:04
 
